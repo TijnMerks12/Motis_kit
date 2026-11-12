@@ -1,0 +1,14 @@
+# MOTIS 2 configuratie voor Nederland (gebaseerd op het voorbeeld in docs/setup.md van MOTIS)
+osm: netherlands-latest.osm.pbf
+timetable:
+  first_day: TODAY
+  datasets:
+    nl:
+      path: nl_ovapi.gtfs.zip
+      rt:
+        - url: https://gtfs.ovapi.nl/nl/trainUpdates.pb
+        - url: https://gtfs.ovapi.nl/nl/tripUpdates.pb
+server:
+  port: 8080
+osr_footpath: true
+geocoding: true
