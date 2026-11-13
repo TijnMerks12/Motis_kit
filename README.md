@@ -8,6 +8,12 @@ Draait MOTIS (open-source, MIT) met Nederlandse GTFS + live vertragingen (OVapi)
 4. Laat poort 22 als enige open; de rest gaat via Tailscale.
 (Alternatief: gebruikte mini-pc met Ubuntu; stappen 2-4 vervallen.)
 
+## 1b. Testen op een Chromebook (Linux aanzetten: Instellingen → Ontwikkelaars) of andere kleine machine
+Gebruik een kleiner kaartgebied: `BBOX="4.8,51.25,6.3,52.15" bash setup.sh` (Utrecht, Zaltbommel, Eindhoven, Horst). Zorg voor ~10 GB vrije schijfruimte. Geen server nodig; later verhuis je dezelfde kit.
+
+## Let op Oracle
+Oracle weigert volgens derden virtuele/prepaidkaarten; een fysieke Visa/Mastercard (ook debit) is nodig. Alternatieven: Azure for Students (GitHub Student Pack, geen creditcard, $100/jaar) of een gebruikte mini-pc. Met GitHub Pro (in het pack) kun je Pages ook vanuit een privé-repo draaien.
+
 ## 2. Installeren (op de server)
 ```
 git clone <jouw-repo-met-deze-map> && cd <repo>/motis-kit
